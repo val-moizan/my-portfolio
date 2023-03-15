@@ -1,0 +1,17 @@
+<div class="skillBoxComponent">
+  <div class="boxHeader">
+    <img src="{{logo}}" alt="{{logo}}">
+    <div class="title">{{boxTitle}}</div>
+  </div>
+
+  <div class="skillsList">
+    <div class="skill" *ngFor="let skill of skills; index as i;">
+      <div class="skillIcon"> <img src="{{skillsLogos[i]}}" alt="{{skill}}"> </div>
+      <div class="skillTitle">{{skill}}</div>
+    </div>
+
+  </div>
+</div>
+
+
+

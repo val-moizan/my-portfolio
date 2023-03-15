@@ -1,0 +1,9 @@
+<div class="skillsBoxList">
+  <div *ngFor="let title of listOfTitles; index as i;" class="skillBox">
+    <app-skills-box [boxTitle]="title" [skills]="listOfSkills[i]"
+                    [logo]="listOfLogos[i]" [skillsLogos]="listOfSkillLogos[i]"></app-skills-box>
+  </div>
+</div>
+
+
+
