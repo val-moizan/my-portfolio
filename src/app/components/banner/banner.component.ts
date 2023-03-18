@@ -1,5 +1,7 @@
 import {Component, ElementRef, HostListener, ViewChild} from '@angular/core';
 
+declare var particlesJS: any;
+
 @Component({
   selector: 'app-banner',
   templateUrl: './banner.component.html',
@@ -25,7 +27,12 @@ export class BannerComponent {
 
       banner.style.height = diff + "px"; //réduction de la hauteur de la banner lorsqu'on scroll vers le bas
     }
-
   }
+
+  ngOnInit(): void {
+    particlesJS.load('particles-js', '../assets/particles/particles.json', null);
+  }
+
+
 
 }
