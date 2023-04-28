@@ -1,0 +1,26 @@
+<div class = "dialog">
+    <div class = "topHeader">
+        <div class = "imageHeader">
+            <div class = "projectImage" [ngStyle]="{'background-image': 'url(' + project.backgroundImgPath + ')'}" >
+
+            </div>
+        </div>
+        <div class = "titleHeader">
+            {{project.name}}
+        </div>
+    </div>
+
+    <div class = "content">
+        <div class = "details">
+            Cadre : {{project.cadre}} <br/><br/>
+            Année de réalisation :
+            Rôle :
+            Technologies :
+            Nombre de personnes sur le projet :
+            
+        </div>
+        <div class = "description">
+            {{project.description}}
+        </div>
+    </div>
+</div>

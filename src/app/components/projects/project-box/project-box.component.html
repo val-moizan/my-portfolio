@@ -1,0 +1,11 @@
+<div class="projectBoxComponent" [ngStyle]="{'background-image': 'url(' + project.backgroundImgPath + ')'}" (click)="openDialog()">
+  <div class="boxHeader">
+    <div class="title">{{project.name}}</div>
+    <br/>
+    <div class="description">Cadre : {{project.cadre}} <br/><br/>
+      {{project.smallDescription}}
+    </div>
+  </div>
+</div>
+
+

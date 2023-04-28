@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 @Component({
   selector: 'app-skills-box-list',
   templateUrl: './skills-box-list.component.html',
-  styleUrls: ['./skills-box-list.component.css']
+  styleUrls: ['./skills-box-list.component.scss']
 })
 export class SkillsBoxListComponent {
   listOfTitles = [

@@ -8,11 +8,12 @@
 </head>
 <body>
 <app-banner></app-banner>
+<app-title [titleString]="presentationTitleData[0]" [imgPath]="presentationTitleData[1]" ></app-title>
 <app-presentation></app-presentation>
 <app-title [titleString]="skillsTitleData[0]" [imgPath]="skillsTitleData[1]" ></app-title>
 <app-skills-box-list id="skillsComponent"></app-skills-box-list>
 <app-title [titleString]="projectsTitleData[0]" [imgPath]="projectsTitleData[1]" ></app-title>
-
+<app-projects></app-projects>
 <br/>
 </body>
 

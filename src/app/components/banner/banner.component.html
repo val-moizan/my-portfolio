@@ -1,16 +1,24 @@
 <div id="banner">
-  <div class="card">
+  <div id="particles-js">
+  </div>
+  <div class="card floating" (click)="scrollBanner()" #cardElement>
     <div class="leftCard">
       <div class="topLeftCard">
         <img src="assets/me.png" alt="moi">
         <h1>Valentin Moizan</h1>
       </div>
+      <mat-divider></mat-divider>
       <div class="botLeftCard">
-        <h2>Ingénieur informatique</h2>
+        <div class ="degreeTitle">
+          <img src="assets/logos/degree.jpg" alt="moi">
+          <h2>Ingénieur diplômé 2023</h2>
+        </div>
+
+        <h3>Développeur logiciel & full stack</h3>
       </div>
     </div>
     <div class="rightCard">
-      <img src="assets/backgrounds/unity.png" alt="unityBackground">
+      <img src="assets/backgrounds/banner.jpg" alt="unityBackground">
     </div>
   </div>
 </div>
