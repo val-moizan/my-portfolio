@@ -1,0 +1,11 @@
+.timeline{
+    width: 100%;
+    height: 1450px;
+    .line{
+        margin-top: 20px;
+        height: 1350px; //Hauteur de la timeline - 100px
+        width: 50%;
+        position: absolute;
+        border-right: 2px solid #d6d6d6;
+    }
+}

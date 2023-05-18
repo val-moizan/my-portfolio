@@ -1,52 +1,98 @@
 .dialog{
-    margin:10px;
+    font-family: raleway, serif;
+    height:auto;
+    display: flex;
+    flex-direction: column;
     .topHeader{
         width:100%;
         height:250px;
-        display: flex;
-        flex-direction: row;
-        overflow: hidden;
-        border-bottom: solid 0.5px rgba(0, 0, 0, .1);
-        padding-bottom: 20px;
-        .imageHeader{
-            width:40%;
-            border-right: solid 0.5px rgba(0, 0, 0, .1);
-            padding-right: 50px;
-            .projectImage{
-                width:100%;
-                height:100%;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-
-        }
-
-        .titleHeader{
-            width:60%;
-            font-family: raleway, serif;
-            font-size: 95px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     .content{
         width:100%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         overflow: hidden;
-        border-bottom: solid 0.5px rgba(0, 0, 0, .1);
-        padding-bottom: 20px;
 
-        .details{
-            width:40%;
-            border-right: solid 0.5px rgba(0, 0, 0, .1);
-            padding-right: 50px;
+        .title{
+            padding: 10px 0;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .dateText{
+                font-size: 12px;
+                margin: 0;
+            }
+            .titleText{
+                margin: 0;
+                font-size: 30px;
+            }
+        }
+        .technologies{
+            width:100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            p{
+                font-weight: bold;
+            }
+            .techList{
+                display: flex;
+                flex-direction: row;
+
+                .tech{
+                    display: inline-block;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    margin-bottom: 10px;
+                    text-align: center;
+    
+                    .techIcon{
+                        background-repeat: no-repeat;
+                        img {
+                            max-height: 50px;
+                          }
+                    }
+                }
+            }
+
         }
 
         .description{
-            width:60%;
+            text-align: center;
+            padding: 25px 20px;
+        }
+        .footer{
+            display: flex;
+            bottom: 0;
+            width: 100%;
+            .footerItem{
+                width: 33.3334%;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding: 10px 0;
+                text-shadow:  0 0 1px black;
+
+                .footerItemInformation{
+                    margin:0;
+                    font-weight: bold;
+                    font-size: 20px;
+                    padding-bottom:2px;
+                    color:white;
+                }
+                .footerItemTitle{
+                    margin:0;
+                    color:rgb(235,235,235);
+                }
+            }
         }
     }
 }

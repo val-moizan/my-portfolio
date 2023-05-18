@@ -1,0 +1,5 @@
+<div class="experienceBoxList">
+    <div *ngFor="let experience of experienceList; index as i;"  class = "experienceBox">
+        <app-experience-box [experience] = "experience" [isRight] = "i%2===0"></app-experience-box>
+    </div>
+</div>

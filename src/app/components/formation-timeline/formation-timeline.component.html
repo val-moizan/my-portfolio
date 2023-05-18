@@ -1,0 +1,6 @@
+<div class = "timeline">
+    <div class="line"></div>
+    <div *ngFor="let formation of formationList; index as i;" >
+        <app-formation [formation] = "formation" [isRight] = "i%2===0" class = "formationBox"></app-formation>
+    </div>
+</div>

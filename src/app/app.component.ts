@@ -10,11 +10,18 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'my-portfolio';
-  presentationTitleData = ["Présentation", "assets/backgrounds/sea.jpg"]
-  skillsTitleData = ["Compétences", "assets/backgrounds/bgskills.jpg"]
-  projectsTitleData = ["Projets", "assets/backgrounds/bgprojets.jpeg"]
+  presentationTitleData: TitleData= { title:"Présentation",backgroundImgPath: "assets/backgrounds/sea.jpg" }
+  skillsTitleData: TitleData= { title:"Compétences", backgroundImgPath: "assets/backgrounds/bgskills.jpg" }
+  projectsTitleData: TitleData= { title:"Projets", backgroundImgPath: "assets/backgrounds/bgprojets.jpeg"}
+  experiencesTitleData: TitleData= { title:"Expériences", backgroundImgPath: "assets/backgrounds/sunset.jpg"}
+  formationTitleData: TitleData= { title:"Formation", backgroundImgPath: "assets/backgrounds/bgprojets.jpeg"}
 
 
 
 
+}
+
+export class TitleData{
+  title!: string;
+  backgroundImgPath!: string;
 }

@@ -24,6 +24,8 @@ export class ProjectBoxComponent {
   
   openDialog(): void {
     const dialogRef = this.dialog.open(ProjectDialogComponent, {
+      maxHeight: '90vh',
+      width:'450px',
       data: { myObjectHolder: this.project }
     });
   }

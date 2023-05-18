@@ -8,12 +8,16 @@
 </head>
 <body>
 <app-banner></app-banner>
-<app-title [titleString]="presentationTitleData[0]" [imgPath]="presentationTitleData[1]" ></app-title>
+<app-title [titleString]="presentationTitleData.title" [imgPath]="presentationTitleData.backgroundImgPath" ></app-title>
 <app-presentation></app-presentation>
-<app-title [titleString]="skillsTitleData[0]" [imgPath]="skillsTitleData[1]" ></app-title>
+<app-title [titleString]="skillsTitleData.title" [imgPath]="skillsTitleData.backgroundImgPath" ></app-title>
 <app-skills-box-list id="skillsComponent"></app-skills-box-list>
-<app-title [titleString]="projectsTitleData[0]" [imgPath]="projectsTitleData[1]" ></app-title>
+<app-title [titleString]="projectsTitleData.title" [imgPath]="projectsTitleData.backgroundImgPath" ></app-title>
 <app-projects></app-projects>
+<app-title [titleString]="experiencesTitleData.title" [imgPath]="experiencesTitleData.backgroundImgPath" ></app-title>
+<app-experiences></app-experiences>
+<app-title [titleString]="formationTitleData.title" [imgPath]="formationTitleData.backgroundImgPath" ></app-title>
+<app-formation-timeline></app-formation-timeline>
 <br/>
 </body>
 

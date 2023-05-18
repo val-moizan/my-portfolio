@@ -26,7 +26,7 @@ export class SkillsBoxListComponent {
     ["Français", "Anglais", "Allemand"],
     ["VegasPro", "AfterEffect", "Photoshop"],
     ["JetBrains", "Eclipse", "VSCode", "GitLab"],
-    ["HTML", "CSS", "Angular", "JavaScript", "PHP", "React", "Symfony"],
+    ["HTML", "CSS", "Angular", "Spring Boot", "JavaScript", "PHP", "React", "Symfony"],
     ["Java", "C", "C++", "Python", "QT"]
   ]
   listOfSkillLogos = [
@@ -34,7 +34,7 @@ export class SkillsBoxListComponent {
     ["assets/logos/french.png", "assets/logos/english.png", "assets/logos/german.png"],
     ["assets/logos/svp.png", "assets/logos/ae.png", "assets/logos/photoshop.png"],
     ["assets/logos/jetbrain.png", "assets/logos/eclipse.png", "assets/logos/vscode.png",  "assets/logos/gitlab.png"],
-    ["assets/logos/html.png", "assets/logos/css.png", "assets/logos/angular.png", "assets/logos/js.png", "assets/logos/php.png", "assets/logos/react.png", "assets/logos/symfony.jpg"],
+    ["assets/logos/html.png", "assets/logos/css.png", "assets/logos/angular.png", "assets/logos/spring.png", "assets/logos/js.png", "assets/logos/php.png", "assets/logos/react.png", "assets/logos/symfony.jpg"],
     ["assets/logos/java.png", "assets/logos/c.png", "assets/logos/c++.png", "assets/logos/python.png", "assets/logos/qt.png"],
   ]
 }

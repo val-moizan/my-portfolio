@@ -1,6 +1,6 @@
-import { Component, Output, EventEmitter, Inject, OnInit} from '@angular/core';
+import { Component, Inject, OnInit} from '@angular/core';
 import { ProjectObject } from '../projects.component';
-import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 @Component({
   selector: 'app-project-dialog',
   templateUrl: './project-dialog.component.html',
@@ -14,8 +14,12 @@ export class ProjectDialogComponent {
       this.project = data.myObjectHolder;
   }
 
-  ngOnInit() {
+  public projectFooterInformations: {title: string, information: string}[] = [];
 
+  ngOnInit() {
+    this.projectFooterInformations[0] = {title: "Cadre", information: this.project.cadre};
+    this.projectFooterInformations[1] = {title: "Équipe", information: this.project.people};
+    this.projectFooterInformations[2] = {title: "Rôle", information: this.project.role};
 
   }
 }
