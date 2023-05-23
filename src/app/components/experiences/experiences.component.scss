@@ -1,0 +1,21 @@
+.experienceBoxList{
+    margin: 100px 0;
+
+    .experienceBox{
+  
+        display: inline-block;
+        
+        @media (min-width: 668px) {
+            padding-inline: 50px;
+            width: 500px;
+        }   
+
+
+        @media (max-width: 668px) {
+            width: 100%;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+    }
+}
+

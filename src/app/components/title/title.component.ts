@@ -15,15 +15,17 @@ export class TitleComponent {
    @ViewChild("titleDiv") 
    titleElement!: ElementRef;
 
+  /**
+   * Fonction appelé lors du scroll
+   */
   @HostListener('window:scroll')
   onScroll(): void {
     const height = window.innerHeight;
     const title = this.titleElement.nativeElement as HTMLElement;
-    const imgHeight: number = 2160;
     if(title != null){
       const animBanner = Math.min(Math.max((title.getBoundingClientRect().top + title.offsetHeight) / (height + title.offsetHeight), 0), 1);
-      title.style.backgroundPosition = "50% " + -400 * animBanner + "px";
-    }else{
+      console.log(animBanner)
+      title.style.backgroundPositionY = -600 * animBanner + "px";
     }
 
 

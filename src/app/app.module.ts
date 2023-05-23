@@ -18,8 +18,10 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { ProjectDialogComponent } from './components/projects/project-dialog-component/project-dialog.component';
 import { FormationTimelineComponent } from './components/formation-timeline/formation-timeline.component';
 import { FormationComponent } from './components/formation-timeline/formation/formation.component';
-import { ExperiencesComponent } from './experiences/experiences.component';
-import { ExperienceBoxComponent } from './experiences/experience-box/experience-box.component';
+import { ExperiencesComponent } from './components/experiences/experiences.component';
+import { ExperienceBoxComponent } from './components/experiences/experience-box/experience-box.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
 @NgModule({
   exports:[],
   declarations: [
@@ -36,6 +38,7 @@ import { ExperienceBoxComponent } from './experiences/experience-box/experience-
     FormationComponent,
     ExperiencesComponent,
     ExperienceBoxComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +47,8 @@ import { ExperienceBoxComponent } from './experiences/experience-box/experience-
     AppRoutingModule,
     MatDividerModule,
     MatTabsModule,
-    MatDialogModule
+    MatDialogModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

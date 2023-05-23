@@ -5,6 +5,10 @@
         margin-top: 20px;
         height: 1350px; //Hauteur de la timeline - 100px
         width: 50%;
+        @media (max-width: 668px) {
+            width: 80px;
+        }
+
         position: absolute;
         border-right: 2px solid #d6d6d6;
     }

@@ -104,7 +104,7 @@ export class ProjectsComponent {
       smallDescription: "Développement d'un environnement 3D sous unity", 
       description: `ABMU-Carrefour est un projet réalisé dans le cadre du projet M1 à l'ISEN.
        Il a pour but de générer une simulation de carrefour routier avec le logiciel Unity et le framework ABMU. 
-       La technologie mise en avant est la simulation multi agent.`,
+       La technologie mise en avant est la simulation multi agents.`,
       date: "2022",
       people: "2",
       role: "Développeur",
@@ -119,7 +119,7 @@ export class ProjectsComponent {
     {
       name: "API-Spring",
       cadre: "ISEN", 
-      backgroundImgPath: "assets/projet/spring-boot.png", 
+      backgroundImgPath: "assets/projet/spring-boot-card.png", 
       backgroundBoxImgPath: "assets/projet/spring-boot.png", 
       smallDescription: "Développement d'une API spring boot", 
       description: `Dans le cadre des cours sur le framework Java Spring Boot en 5ème année à l'ISEN, j'ai été amené à développer
@@ -143,6 +143,39 @@ export class ProjectsComponent {
       smallDescription: "Développement et déploiement de mon portfolio en ligne", 
       description: `J'ai développer mon portfolio en ligne en Angular. Le site peut-être facilement mis à jour grâce à Angular et son systeme de component.
        Mon site web est disponible en open source : https://github.com/val-moizan/my-portfolio`,
+      date: "2023",
+      people: "1",
+      role: "Développeur",
+      color: "#2CD4AF",
+      technologies: [
+        {
+          name:"Angular",
+          logo:"assets/logos/angular.png",
+        },
+        {
+          name:"SCSS",
+          logo:"assets/logos/css.png",
+        },
+        {
+          name:"HTML",
+          logo:"assets/logos/html.png",
+        },
+        {
+          name:"Typescript",
+          logo:"assets/logos/typescript.png",
+        }
+      ]
+    },
+    {
+      name: "IHM de connectivité",
+      cadre: "Professionnel", 
+      backgroundImgPath: "assets/projet/connectivity.png", 
+      backgroundBoxImgPath: "assets/projet/connectivity.png", 
+      smallDescription: "Développement fullstack d'une IHM Angular, d'un serveur Spring Boot, et d'un service en Java", 
+      description: `J'ai développé une interface de connectivité qui permet d'afficher et de modifier les connexions
+      d'un réseau de noeuds. Cette interface est développée en angular et affiche les liens de connectivité entre les noeuds
+      sous la forme d'un tableau à deux entrées. L'IHM comporte aussi un serveur spring boot en back qui permet de
+      transmettre les informations entre le front et le service.`,
       date: "2023",
       people: "1",
       role: "Développeur",
