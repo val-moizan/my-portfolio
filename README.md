@@ -8,4 +8,4 @@ Pour lancer le serveur, faites `ng serve`. Aller sur http://localhost:4200/. L'a
 
 ## Déploiement
 
-Ce projet met en place un déploiement automatique grâce au github workflow. L'application est automatiquement déployer sur firebase (https://moizan-valentin.web.app/) lors d'un push sur la branche `main`.
+Ce projet met en place un déploiement automatique grâce au github workflow. L'application est automatiquement déployée sur firebase (https://moizan-valentin.web.app/) lors d'un push sur la branche `main`.
