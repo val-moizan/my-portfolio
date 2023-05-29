@@ -8,7 +8,7 @@
             <p class = titleText>{{project.name}}</p>
         </div>
         <div class = "technologies" *ngIf="project.technologies !== undefined">
-            <p>Technologie{{ project?.technologies?.length == 1 ? "" : "s" }}</p>
+            <p>Technologie{{ project.technologies.length == 1 ? "" : "s" }}</p>
             <div class = "techList">
                 <div class="tech" *ngFor="let tech of project.technologies; index as i;">
                     <div class="techIcon"> <img src="{{tech.logo}}" alt="{{tech}}"> </div>

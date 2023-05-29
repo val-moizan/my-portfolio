@@ -7,7 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-
 export class AppComponent {
   title = 'my-portfolio';
   presentationTitleData: TitleData= { title:"Présentation",backgroundImgPath: "assets/backgrounds/sea.png" }
