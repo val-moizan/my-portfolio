@@ -24,10 +24,7 @@ export class TitleComponent {
     const title = this.titleElement.nativeElement as HTMLElement;
     if(title != null){
       const animBanner = Math.min(Math.max((title.getBoundingClientRect().top + title.offsetHeight) / (height + title.offsetHeight), 0), 1);
-      console.log(animBanner)
       title.style.backgroundPositionY = -600 * animBanner + "px";
     }
-
-
   }
 }
