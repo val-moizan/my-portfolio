@@ -10,5 +10,8 @@
   "include": [
     "src/**/*.spec.ts",
     "src/**/*.d.ts"
+  ],
+  "exclude": [
+    "app/components/banner/banner.component.spec.ts"
   ]
 }

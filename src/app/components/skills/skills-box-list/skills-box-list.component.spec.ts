@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SkillsBoxListComponent } from './skills-box-list.component';
+import { SkillsBoxComponent } from '../skills-box/skills-box.component';
 
 describe('SkillsBoxListComponent', () => {
   let component: SkillsBoxListComponent;
@@ -8,7 +9,10 @@ describe('SkillsBoxListComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SkillsBoxListComponent ]
+      declarations: [ 
+        SkillsBoxListComponent,
+        SkillsBoxComponent
+      ]
     })
     .compileComponents();
 

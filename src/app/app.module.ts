@@ -10,7 +10,6 @@ import {BannerComponent} from './components/banner/banner.component';
 import {AppRoutingModule} from './app-routing.module';
 import { PresentationComponent } from './components/presentation/presentation.component';
 import { TitleComponent } from './components/title/title.component';
-import {MatDividerModule} from '@angular/material/divider';
 import { ProjectsComponent } from './components/projects/projects.component'; 
 import {MatTabsModule} from '@angular/material/tabs';
 import { ProjectBoxComponent } from './components/projects/project-box/project-box.component';
@@ -45,7 +44,6 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     BrowserAnimationsModule,
     MatGridListModule,
     AppRoutingModule,
-    MatDividerModule,
     MatTabsModule,
     MatDialogModule,
     MatToolbarModule
