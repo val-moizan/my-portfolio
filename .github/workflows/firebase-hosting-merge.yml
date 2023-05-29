@@ -11,14 +11,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+      - run: npm install
+      - run: npm run build:prod
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_MY_PORTFOLIO_B603E }}'
           channelId: live
           projectId: my-portfolio-b603e
-      - uses: actions/setup-node@master
-        with:
-          node-version: '12.x'
-      - run: npm install
-      - run: npm run build:prod
+
