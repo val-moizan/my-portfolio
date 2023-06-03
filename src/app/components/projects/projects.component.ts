@@ -141,8 +141,10 @@ export class ProjectsComponent {
       backgroundImgPath: "assets/projet/portfolio.png", 
       backgroundBoxImgPath: "assets/projet/portfolio.png", 
       smallDescription: "Développement et déploiement de mon portfolio en ligne", 
-      description: `J'ai développer mon portfolio en ligne en Angular. Le site peut-être facilement mis à jour grâce à Angular et son systeme de component.
-       Mon site web est disponible en open source : https://github.com/val-moizan/my-portfolio`,
+      description: `J'ai développer mon portfolio en ligne en Angular (https://moizan-valentin.web.app). Le site peut-être facilement mis à jour grâce à Angular 
+      et son systeme de component. Mon site web est disponible en open source : https://github.com/val-moizan/my-portfolio. 
+      De plus, l'application met en place un déploiement automatique grâce au github workflow. 
+      Elle est automatiquement déployée sur firebase lors d'un push sur la branche main`,
       date: "2023",
       people: "1",
       role: "Développeur",
