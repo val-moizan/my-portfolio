@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { SkillBoxObject, SkillObject } from '../skills-box-list/skills-box-list.component';
 
 @Component({
   selector: 'app-skills-box',
@@ -13,20 +14,6 @@ export class SkillsBoxComponent {
   /**
    * Liste des compétences
    */
-  @Input() skills:string[] = [];
+  @Input() skillBox!:SkillBoxObject;
 
-  /**
-   * Liste des logos des compétences
-   */
-  @Input() skillsLogos:string[] = [];
-
-  /**
-   * Logo de la box de compétences
-   */
-  @Input() logo:string = "";
-
-  /**
-   * Titre de la box de compétences
-   */
-  @Input() boxTitle:string = "";
 }

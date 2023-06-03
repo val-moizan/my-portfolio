@@ -8,7 +8,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'my-portfolio';
   presentationTitleData: TitleData= { title:"Présentation",backgroundImgPath: "assets/backgrounds/sea.png" }
   skillsTitleData: TitleData= { title:"Compétences", backgroundImgPath: "assets/backgrounds/skills.png" }
   projectsTitleData: TitleData= { title:"Projets", backgroundImgPath: "assets/backgrounds/projet.png"}
