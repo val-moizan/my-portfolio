@@ -1,4 +1,6 @@
 <div class = "navBar">
+    <div class="selected"></div>
+    <div class="expand" [ngStyle]="{'background-image': 'url(assets/logos/navbar.png)'}" (click)="expandClickNavBar()"></div>
     <div class="logo" [ngStyle]="{'background-image': 'url(assets/favicon.png)'}" (click)="scrollToElement('banner')"></div>
     <div class="link Présentation" (click)="scrollToElement('Présentation')">Présentation</div>
     <div class="link Compétences" (click)="scrollToElement('Compétences')">Compétences</div>

@@ -14,18 +14,6 @@ export class ProjectsComponent {
 
   public projectList: ProjectObject[] = [
     {
-      name: "50x50", cadre: "ISEN", 
-      backgroundImgPath: "assets/projet/50x50.png", 
-      backgroundBoxImgPath: "assets/projet/50x50.png",
-      smallDescription: `Réalisation d'une maquette de 50x50 cm dans le theme de Black Mirror`, 
-      description: `Lors d'un travail de groupe, j'ai participé à la réalisation d'une maquette. Nous avions comme consigne de faire une maquette de 50 x 50 cm
-      en tant qu'ingénieur chez Black Mirror. Avec cette maquette, nous avons voulu mettre en scène une entité représentant les technologies, qui domine notre société.`,
-      date: "2018-2019",
-      people: "2",
-      role: "Maquettiste",
-      color: "#FF4B06",
-    },
-    {
       name: "Borne d'arcade",
       cadre: "Associatif", 
       backgroundImgPath: "assets/projet/arcade2.png", 
@@ -55,7 +43,7 @@ export class ProjectsComponent {
       smallDescription: "", 
       description: `Sigma production était une organisation créée par un ami et moi. On s'est lancé dans une aventure qui avait pour but de développer et mettre 
       en ligne une amélioration du jeu Minecraft. Cette expérience m'a permis de découvrir énormément de choses en Java et de gérer une communauté. 
-      Cette communauté s'est bâtie autour du logiciel Sigma notre équipe était constituée de 5 membres.
+      Cette communauté s'est bâtie autour du logiciel Sigma et notre équipe était constituée de 5 membres.
       Chaque jours, plus de 6000 utilisateurs uniques visitaient notre site internet. Parmis ces visiteurs, 4000 téléchargaient notre logiciel`,
       date: "2016-2021",
       people: "5",
@@ -104,7 +92,8 @@ export class ProjectsComponent {
       smallDescription: "Développement d'un environnement 3D sous unity", 
       description: `ABMU-Carrefour est un projet réalisé dans le cadre du projet M1 à l'ISEN.
        Il a pour but de générer une simulation de carrefour routier avec le logiciel Unity et le framework ABMU. 
-       La technologie mise en avant est la simulation multi agents.`,
+       La technologie mise en avant est la simulation multi agents. Les agents (voitures et piétons) doivent réspecter le code de la route. 
+       Certains agents "voyous" ne le respectent pas, et peuvent alors parfois provoquer des accidents`,
       date: "2022",
       people: "2",
       role: "Développeur",
@@ -130,8 +119,12 @@ export class ProjectsComponent {
       color: "#6db33f",
       technologies: [
         {
-          name:"C#",
-          logo:"assets/logos/csharp.png",
+          name:"Java",
+          logo:"assets/logos/java.png",
+        },        
+        {
+          name:"Spring Boot",
+          logo:"assets/logos/spring.png",
         }
       ]
     },
@@ -198,6 +191,14 @@ export class ProjectsComponent {
         {
           name:"Typescript",
           logo:"assets/logos/typescript.png",
+        },
+        {
+          name:"SpringBoot",
+          logo:"assets/logos/spring.png",
+        },
+        {
+          name:"Java",
+          logo:"assets/logos/java.png",
         }
       ]
     },
@@ -218,6 +219,10 @@ export class ProjectsComponent {
         {
           name:"Android",
           logo:"assets/logos/android.png",
+        },
+        {
+          name:"Java",
+          logo:"assets/logos/java.png",
         }
       ]
     }
