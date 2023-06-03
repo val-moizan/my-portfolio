@@ -200,6 +200,26 @@ export class ProjectsComponent {
           logo:"assets/logos/typescript.png",
         }
       ]
+    },
+    {
+      name: "MorIsen",
+      cadre: "ISEN", 
+      backgroundImgPath: "assets/projet/morisen2.png", 
+      backgroundBoxImgPath: "assets/projet/morisen.png", 
+      smallDescription: "Développement d'un jeu morpion sur une application android", 
+      description: `J'ai développé une application android qui permet de jouer au morpion contre d'autres utilisateurs. La base de donnée est
+      stockée sur firebase et permet à l'application de gérer simultanément plusieurs partie. Un joueur peut s'inscrire avec son numéro de téléphone et créer un compte avec 
+      ce dernier. Un ratio de victoires - défaites est alors lié à son compte.`,
+      date: "2021-2022",
+      people: "1",
+      role: "Développeur",
+      color: "#77c159",
+      technologies: [
+        {
+          name:"Android",
+          logo:"assets/logos/android.png",
+        }
+      ]
     }
   ]
   ngOnInit(){
