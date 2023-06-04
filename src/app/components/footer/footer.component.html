@@ -1,0 +1,13 @@
+<div class = "footer">
+    <div class = "websiteInformations">
+        <p> Fait en Angular par Valentin Moizan</p>
+    </div>
+    <div *ngFor="let information of informations" class = "informationBox" (click)="information.runnable()">
+        <div class = "infoLogo" [ngStyle]="{'background-image': 'url(' + information.logo + ')'}">
+            
+        </div>
+        <div class = "infoString">
+            {{information.string}}
+        </div>
+    </div>
+</div>
