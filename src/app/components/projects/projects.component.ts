@@ -18,7 +18,7 @@ export class ProjectsComponent {
       cadre: "Associatif", 
       backgroundImgPath: "assets/projet/arcade2.png", 
       backgroundBoxImgPath: "assets/projet/arcade.png",
-      smallDescription: "", 
+      smallDescription: "Construction et développement d'une borne d'arcade", 
       description: `Avec deux camarades de classe ainsi que l'aide financière du Club Info, nous nous sommes lancés dans l'idée de créer de toutes pièces une borne
        d'arcade qui serait installée dans les locaux de l'ISEN Rennes. Le côté physique a été rapidement terminé mais le support informatique a prit du temps. 
        Nous devions développer un menu principal de la borne qui puisse prendre en compte tous les jeux de celle-ci. Le but étant que les futurs Isenniens puissent 
@@ -40,7 +40,7 @@ export class ProjectsComponent {
       cadre: "Personnel", 
       backgroundImgPath: "assets/projet/sigma.png", 
       backgroundBoxImgPath: "assets/projet/sigma.png", 
-      smallDescription: "", 
+      smallDescription: "Développement d'une amélioration du jeu Minecraft. Gestion d'une communauté", 
       description: `Sigma production était une organisation créée par un ami et moi. On s'est lancé dans une aventure qui avait pour but de développer et mettre 
       en ligne une amélioration du jeu Minecraft. Cette expérience m'a permis de découvrir énormément de choses en Java et de gérer une communauté. 
       Cette communauté s'est bâtie autour du logiciel Sigma et notre équipe était constituée de 5 membres.
@@ -112,7 +112,7 @@ export class ProjectsComponent {
       backgroundBoxImgPath: "assets/projet/spring-boot.png", 
       smallDescription: "Développement d'une API spring boot", 
       description: `Dans le cadre des cours sur le framework Java Spring Boot en 5ème année à l'ISEN, j'ai été amené à développer
-      une API.`,
+      une API. Cet API était utilisé dans un contexte banquaire, avec des conseillers, des clients etc..`,
       date: "2023",
       people: "4",
       role: "Développeur",

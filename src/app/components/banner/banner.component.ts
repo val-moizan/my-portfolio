@@ -36,7 +36,7 @@ export class BannerComponent {
     this.cardElement.nativeElement.classList.add("slide-out-top"); //Début du scroll vers le haut de la card
     this.cardElement.nativeElement.classList.remove("floating"); 
     setTimeout(() => {
-      const height: number = window.innerHeight;
+      const height: number = window.innerHeight - 50;
       window.scrollTo({ top: height, left: 0, behavior: 'smooth' }); //Début du scroll vers le bas
       setTimeout(() => {
         this.cardElement.nativeElement.classList.remove("slide-out-top"); //On remet la card

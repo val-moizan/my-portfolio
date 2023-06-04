@@ -21,6 +21,7 @@ import { ExperiencesComponent } from './components/experiences/experiences.compo
 import { ExperienceBoxComponent } from './components/experiences/experience-box/experience-box.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { FooterComponent } from './components/footer/footer.component';
 @NgModule({
   exports:[],
   declarations: [
@@ -37,7 +38,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     FormationComponent,
     ExperiencesComponent,
     ExperienceBoxComponent,
-    NavBarComponent
+    NavBarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
