@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="fr-FR" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="1567650394870938674" datatype="html">
+        <source>Présentation</source>
+        <target>Presentation</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/nav-bar/nav-bar.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="718068350898796239" datatype="html">
+        <source>Compétences</source>
+        <target>Skills</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/nav-bar/nav-bar.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2823327110111393272" datatype="html">
+        <source>Projets</source>
+        <target>Projects</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/nav-bar/nav-bar.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6159371751945465569" datatype="html">
+        <source>Expériences</source>
+        <target>Experiences</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/nav-bar/nav-bar.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1338480611696165967" datatype="html">
+        <source>Formation</source>
+        <target>Education</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/nav-bar/nav-bar.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9003728608098550102" datatype="html">
+        <source>J&apos;ai développé une application android qui permet de jouer au morpion contre d&apos;autres utilisateurs. La base de donnée est
+      stockée sur firebase et permet à l&apos;application de gérer simultanément plusieurs partie. Un joueur peut s&apos;inscrire avec son numéro de téléphone et créer un compte avec 
+      ce dernier. Un ratio de victoires - défaites est alors lié à son compte.</source>
+      <target> ENGLISH</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/projects/projects.component.ts</context>
+          <context context-type="linenumber">211,213</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
