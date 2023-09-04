@@ -1,6 +1,5 @@
 import { Component, HostListener } from '@angular/core';
 import { delay } from 'rxjs';
-import { getTitles } from 'src/app/Utils/Utils';
 
 @Component({
   selector: 'app-nav-bar',
@@ -22,14 +21,23 @@ export class NavBarComponent {
 
   /**
    * Permet d'effectuer un smooth scroll à une destination
-   * @param destination 
+   * La destination est automatiquement recupérer grâce au innerHTML du bouton cliqué
    */
-  scrollToElement(destination: string): void {
-    const element:Element = document.querySelector("#" + destination)!;
+  scrollToElement(event: Event|null): void {
+    let stringTarget = "banner"
+    if(event != null){
+      const target:EventTarget|null = event.target || event.srcElement || event.currentTarget;
+      const linkElement:HTMLElement = target as HTMLElement
+      stringTarget = linkElement.innerHTML;
+    }
+    const element:Element = document.querySelector("#" + stringTarget)!;
     const navBarHeight:number = 50;
     const y:number = element.getBoundingClientRect().top + window.pageYOffset - navBarHeight;
 
     window.scrollTo({top: y, behavior: 'smooth'});
+    if(this.expanded){
+      this.expandClickNavBar()
+    }
   }
 
   /**
@@ -75,17 +83,18 @@ export class NavBarComponent {
    * @returns la section de l'utilisateur (présentation, formation..)
    */
   getCurrentSectionFromScroll(): string|undefined{
-    const titles:string[] = getTitles()
-    let sectionTop = -Infinity;
-    let section = undefined;
-    titles.forEach(title => {
-      const top:number = document.getElementById(title)?.getBoundingClientRect().top! - 51;
-      if(top < 0 && top > sectionTop){
-        section = title;
-        sectionTop = top;
-      }
-    })
-    return section;
+    // const titles:string[] = getTitles()
+    // let sectionTop = -Infinity;
+    // let section = undefined;
+    // titles.forEach(title => {
+    //   const top:number = document.getElementById(title)?.getBoundingClientRect().top! - 51;
+    //   if(top < 0 && top > sectionTop){
+    //     section = title;
+    //     sectionTop = top;
+    //   }
+    // })
+    // return section;
+    return undefined
   }
 
   /**
@@ -112,6 +121,17 @@ export class NavBarComponent {
 
     const expandLogo: HTMLElement = document.querySelector(".expand") as HTMLElement;
     expandLogo.style.backgroundImage = this.expanded ? "url(assets/logos/navbar_expanded.png)" : "url(assets/logos/navbar.png)";
+  }
+
+  @HostListener('window:click', ['$event.target'])
+  onClick(target: HTMLElement) {
+    const dropdown:HTMLElement = document.getElementsByClassName("navBar")[0] as HTMLElement
+    console.log(dropdown.contains(target))
+    if(!dropdown.contains(target)){ //Click hors du dropdown
+      if(this.expanded){
+        this.expandClickNavBar()
+      }
+    }
   }
 }
 

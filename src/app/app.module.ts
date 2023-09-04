@@ -26,6 +26,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
+import {MatSelectModule} from '@angular/material/select';
+import { LanguageDropdownComponent } from './components/language-dropdown/language-dropdown.component'; 
 
 
 @NgModule({
@@ -45,7 +47,8 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
     ExperiencesComponent,
     ExperienceBoxComponent,
     NavBarComponent,
-    FooterComponent
+    FooterComponent,
+    LanguageDropdownComponent
   ],
   imports: [
     BrowserModule,
@@ -55,6 +58,7 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
     MatTabsModule,
     MatDialogModule,
     MatToolbarModule,
+    MatSelectModule,
     // ngx-translate and the loader module
     HttpClientModule,
     TranslateModule.forRoot({

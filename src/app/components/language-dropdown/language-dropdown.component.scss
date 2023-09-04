@@ -1,0 +1,51 @@
+.customDropdown{
+    
+    height: 40px;
+
+    .dropDownHeader{
+        
+
+        transition: 200ms ease all;
+        border: 1px solid rgba(255, 255, 255, .2);
+        border-radius: 8px;
+        -webkit-box-shadow: 1px 0 34px 0 rgba(0, 0, 0, .17);
+        -moz-box-shadow: 1px 0 34px 0 rgba(0, 0, 0, .17);
+        box-shadow: 0 0 7px 0 rgba(0, 0, 0, .5);
+        cursor: pointer;
+        text-align: center;
+        height: 100%;
+        img{
+            height: 40px;
+            transition: 200ms ease all;
+        }
+        .img-rotate{
+            transform: rotate(180deg);
+
+        }
+    }
+    .dropDownList{
+        transform: translateY(-5px);
+        height: 0px;
+        transition: 200ms ease all;
+        overflow: hidden;
+        padding-top: -10px;
+        border-radius: 8px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        box-shadow: 1px 5px 5px 0 rgba(0, 0, 0, .17);
+        .dropDownListItem{
+            background-color: rgb(255, 255, 255);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            img{
+                height: 30px;
+                padding: 0 10px;
+            }
+
+        }
+        .dropDownListItem:hover{
+            background-color: rgb(201, 201, 201);
+        }
+    }
+}

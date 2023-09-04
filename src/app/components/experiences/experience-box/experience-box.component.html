@@ -1,7 +1,7 @@
 <div class="experienceBoxComponent" [ngClass]="{'right' : isRight, 'left' : !isRight }">
     <div class="text" [ngClass]="{'right' : isRight, 'left' : !isRight }">
-        <div class="title">{{experience.title}}</div>
-        <div class="description">{{experience.description}}</div>
+        <div class="title">{{experience.title | translate}}</div>
+        <div class="description">{{experience.description | translate}}</div>
     </div>
     <div class="img"  [ngStyle]="{'background-image': 'url(' + experience.imgPath + ')'}" ></div>
       
