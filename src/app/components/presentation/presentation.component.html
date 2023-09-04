@@ -1,9 +1,16 @@
 <!--<h2 id="presentationTitle">Présentation</h2>-->
-<div class="presentation">
-  <div class="imgPres">
-    <img src="assets/me.png" alt="moi">
+<div class ="globalPres">
+  <div class="presentation">
+    <div class="imgPres">
+      <img src="assets/me.png" alt="moi">
+    </div>
+    <div class="textPres">
+      <p>{{ 'portfolio.presentation.text' | translate}}</p>
+    </div>
   </div>
-  <div class="textPres">
-    <p>{{ 'portfolio.presentation.text' | translate}}</p>
+  <div class = "resumeDL" (click)="downloadResume()">
+    <img src="assets/logos/cv.png" alt="resume">
+    {{'portfolio.presentation.downloadResume' | translate}}
   </div>
 </div>
+

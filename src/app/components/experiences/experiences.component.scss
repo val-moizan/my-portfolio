@@ -8,13 +8,13 @@
     .experienceBox{
         display: inline-block;
         margin-bottom: 40px;
-        @media (min-width: 668px) {
+        @media (min-width: 1000px) {
             padding-inline: 50px;
-            width: 30%;
+            width: 40%;
         }
 
-        @media (max-width: 668px) {
-            width: 100%;
+        @media (max-width: 1000px) {
+            width: 90%;
             flex-direction: column-reverse;
             align-items: center;
         }

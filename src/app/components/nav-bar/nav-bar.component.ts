@@ -46,35 +46,35 @@ export class NavBarComponent {
   @HostListener('window:scroll')
   async onScroll(): Promise<void> {
 
-      const section: string|undefined = this.getCurrentSectionFromScroll();
-      if(this.lastSection != section){
-        if(this.lastSection != undefined){
-          let lastSectionDiv: HTMLElement = document.getElementsByClassName("link " + this.lastSection)[0] as HTMLElement;
-          lastSectionDiv.style.backgroundColor = "transparent"
-        }
-        if(section != null){
-          let sectionDiv: HTMLElement = document.getElementsByClassName("link " + section)[0] as HTMLElement;
-          const selectedBorder: HTMLElement = document.querySelector(".selected") as HTMLElement;
-          selectedBorder.style.display = "initial";
-          if(this.firstLoad){
-            this.firstLoad = false;
-            await setTimeout(()=>{
-              selectedBorder.style.width = sectionDiv.offsetWidth-1 + "px";
-              selectedBorder.style.left = sectionDiv.offsetLeft + "px";
-            }, 500) //500ms de décalage au premier loading le temps que les fonts se chargent (afin d'avoir la bonne width des élements)
+      // const section: string|undefined = this.getCurrentSectionFromScroll();
+      // if(this.lastSection != section){
+      //   if(this.lastSection != undefined){
+      //     let lastSectionDiv: HTMLElement = document.getElementsByClassName("link " + this.lastSection)[0] as HTMLElement;
+      //     lastSectionDiv.style.backgroundColor = "transparent"
+      //   }
+      //   if(section != null){
+      //     let sectionDiv: HTMLElement = document.getElementsByClassName("link " + section)[0] as HTMLElement;
+      //     const selectedBorder: HTMLElement = document.querySelector(".selected") as HTMLElement;
+      //     selectedBorder.style.display = "initial";
+      //     if(this.firstLoad){
+      //       this.firstLoad = false;
+      //       await setTimeout(()=>{
+      //         selectedBorder.style.width = sectionDiv.offsetWidth-1 + "px";
+      //         selectedBorder.style.left = sectionDiv.offsetLeft + "px";
+      //       }, 500) //500ms de décalage au premier loading le temps que les fonts se chargent (afin d'avoir la bonne width des élements)
             
 
-          }else{
-            selectedBorder.style.width = sectionDiv.offsetWidth-1 + "px";
-            selectedBorder.style.left = sectionDiv.offsetLeft + "px";
-          }
+      //     }else{
+      //       selectedBorder.style.width = sectionDiv.offsetWidth-1 + "px";
+      //       selectedBorder.style.left = sectionDiv.offsetLeft + "px";
+      //     }
 
-        }else{
-          const selectedBorder: HTMLElement = document.querySelector(".selected") as HTMLElement;
-          selectedBorder.style.display = "none";
-        }
-        this.lastSection = section;
-      }
+      //   }else{
+      //     const selectedBorder: HTMLElement = document.querySelector(".selected") as HTMLElement;
+      //     selectedBorder.style.display = "none";
+      //   }
+      //   this.lastSection = section;
+      // }
         
       
   }
@@ -126,7 +126,6 @@ export class NavBarComponent {
   @HostListener('window:click', ['$event.target'])
   onClick(target: HTMLElement) {
     const dropdown:HTMLElement = document.getElementsByClassName("navBar")[0] as HTMLElement
-    console.log(dropdown.contains(target))
     if(!dropdown.contains(target)){ //Click hors du dropdown
       if(this.expanded){
         this.expandClickNavBar()
