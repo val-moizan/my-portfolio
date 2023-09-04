@@ -19,7 +19,7 @@
 	"portfolio.formation.summer2019": "Été 2019",
 	"portfolio.formation.summer2022": "Été 2022",
 	"portfolio.heading": "Portfolio de Valentin Moizan",
-	"portfolio.presentation.downloadResume": "Télécharger mon CV",
+	"portfolio.presentation.downloadResume" : "Télécharger mon CV",
 	"portfolio.presentation.text": "Je m’appelle Valentin Moizan et je suis en 5 ème année à l’ISEN de Brest. Dès le collège, j'ai été passioné par l'informatique et les jeux vidéos. J'ai appris à développer en java dès le lycée en autodidacte. J'ai eu l'occasion de mener de nombreux projets pendant mon temps personnel et au cours de ma formation. Mon intérêt dans ce domaine s’est focalisé sur le développement logiciel ainsi que le développement de jeux vidéos.",
 	"portfolio.projects.descriptions.abmuCarrefour": "ABMU-Carrefour est un projet réalisé dans le cadre du projet M1 à l'ISEN. Il a pour but de générer une simulation de carrefour routier avec le logiciel Unity et le framework ABMU. La technologie mise en avant est la simulation multi agents. Les agents (voitures et piétons) doivent réspecter le code de la route. Certains agents \"voyous\" ne le respectent pas, et peuvent alors parfois provoquer des accidents.",
 	"portfolio.projects.descriptions.apiSpring": "Dans le cadre des cours sur le framework Java Spring Boot en 5ème année à l'ISEN, j'ai été amené à développer une API. Cette API était utilisée dans un contexte banquaire, avec des conseillers, des clients etc..",
