@@ -5,10 +5,10 @@
     <div class = "content">
         <div class = "title">
             <p class = "dateText" [ngStyle]="{'color': project.color}">{{project.date}}</p>
-            <p class = titleText>{{project.name}}</p>
+            <p class = titleText>{{project.name | translate}}</p>
         </div>
         <div class = "technologies" *ngIf="project.technologies !== undefined">
-            <p>Technologie{{ project.technologies.length == 1 ? "" : "s" }}</p>
+            <p>{{'portfolio.projects.technologie' | translate}}{{ project.technologies.length == 1 ? "" : "s" }}</p>
             <div class = "techList">
                 <div class="tech" *ngFor="let tech of project.technologies; index as i;">
                     <div class="techIcon"> <img src="{{tech.logo}}" alt="{{tech}}"> </div>
@@ -17,12 +17,12 @@
             </div>
         </div>
         <div class = "description">
-            {{project.description}}
+            {{project.description | translate}}
         </div>
         <div class = "footer">
             <div class="footerItem" *ngFor="let info of projectFooterInformations; first as isFirst " [ngStyle]="{'background-color': project.color, 'border-left': 'solid 1px rgba(65,65,65,0.2)'}">
-                <p class = "footerItemInformation">{{info.information}}</p>
-                <p class = "footerItemTitle">{{info.title}}</p>
+                <p class = "footerItemInformation">{{info.information | translate}}</p>
+                <p class = "footerItemTitle">{{info.title | translate}}</p>
             </div>
         </div>
     </div>

@@ -17,9 +17,9 @@ export class ProjectDialogComponent {
   public projectFooterInformations: {title: string, information: string}[] = [];
 
   ngOnInit() {
-    this.projectFooterInformations[0] = {title: "Cadre", information: this.project.cadre};
-    this.projectFooterInformations[1] = {title: "Équipe", information: this.project.people};
-    this.projectFooterInformations[2] = {title: "Rôle", information: this.project.role};
+    this.projectFooterInformations[0] = {title: "portfolio.projects.scope.scope", information: this.project.cadre};
+    this.projectFooterInformations[1] = {title: "portfolio.projects.team", information: this.project.people};
+    this.projectFooterInformations[2] = {title: "portfolio.projects.role.role", information: this.project.role};
 
   }
 }

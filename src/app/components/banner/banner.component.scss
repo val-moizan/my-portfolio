@@ -27,7 +27,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60%;
     position: relative;
     top:0px;
     transition: all .2s ease-in-out;
@@ -36,7 +35,6 @@
     
     @media (max-width: 1000px) {
       flex-direction: column;
-      height:80%;
       width:400px;
     }
 
@@ -48,6 +46,7 @@
 
       @media (max-width: 1000px) {
         border-bottom: solid 0.5px rgba(0, 0, 0, .1);
+        margin-top: 20px;
       }
       @media (min-width: 1000px) {
         border-right: solid 0.5px rgba(0, 0, 0, .1);
@@ -59,11 +58,12 @@
         align-items: center;
         height:50%;
         margin-bottom: 15px;
+
         img{
-          width: 230px;
+          width: 170px;
           display: inline-block;
           vertical-align:middle;
-          margin-right: 10px;
+          margin-right: 20px;
         }
 
         h1{

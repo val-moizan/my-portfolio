@@ -1,0 +1,16 @@
+<div class = "customDropdown">
+    <div class = "dropDownHeader" (click)="clickDropdown()">
+        <img src="{{headerFlagPath}}" alt="french">
+        <img id="dropdown_arrow" src="assets/logos/dropdown_arrow.png" alt="arrow">
+    </div>
+    <div class = "dropDownList">
+        <div class = "dropDownListItem" (click)="clickDropdownList($event)">
+            <img src="assets/logos/french.png" alt="french">
+            <p>Français</p>
+        </div>
+        <div class = "dropDownListItem" (click)="clickDropdownList($event)">
+            <img src="assets/logos/english.png" alt="english">
+            <p>English</p>
+        </div>
+    </div>
+</div>

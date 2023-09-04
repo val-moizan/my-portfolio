@@ -3,20 +3,21 @@
 <html lang="FR">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,800&display=swap" rel="stylesheet">
 </head>
 <body>
 <app-nav-bar></app-nav-bar>
 <app-banner></app-banner>
-<app-title [titleString]="presentationTitleData.title" [imgPath]="presentationTitleData.backgroundImgPath" ></app-title>
+<app-title [titleString]= "'portfolio.titlePresentation' | translate" [imgPath]="'assets/backgrounds/sea.png'" ></app-title>
 <app-presentation></app-presentation>
-<app-title [titleString]="skillsTitleData.title" [imgPath]="skillsTitleData.backgroundImgPath" ></app-title>
+<app-title [titleString]= "'portfolio.titleSkills' | translate" [imgPath]="'assets/backgrounds/skills.png'" ></app-title>
 <app-skills-box-list id="skillsComponent"></app-skills-box-list>
-<app-title [titleString]="projectsTitleData.title" [imgPath]="projectsTitleData.backgroundImgPath" ></app-title>
+<app-title [titleString]="'portfolio.titleProjects' | translate" [imgPath]="'assets/backgrounds/projet.png'" ></app-title>
 <app-projects></app-projects>
-<app-title [titleString]="experiencesTitleData.title" [imgPath]="experiencesTitleData.backgroundImgPath" ></app-title>
+<app-title [titleString]="'portfolio.titleExperiences' | translate" [imgPath]="'assets/backgrounds/experiences.jpg'" ></app-title>
 <app-experiences></app-experiences>
-<app-title [titleString]="formationTitleData.title" [imgPath]="formationTitleData.backgroundImgPath" ></app-title>
+<app-title [titleString]= "'portfolio.titleFormation' | translate" [imgPath]="'assets/backgrounds/formation.png'" ></app-title>
 <app-formation-timeline></app-formation-timeline>
 <app-footer></app-footer>
 </body>

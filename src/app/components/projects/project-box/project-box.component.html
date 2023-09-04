@@ -1,9 +1,9 @@
 <div mat-dialog-content class="projectBoxComponent" [ngStyle]="{'background-image': 'url(' + project.backgroundBoxImgPath + ')'}" (click)="openDialog()">
   <div class="boxHeader">
-    <div class="title">{{project.name}}</div>
+    <div class="title">{{project.name | translate}}</div>
     <br/>
-    <div class="description">Cadre : {{project.cadre}} <br/><br/>
-      {{project.smallDescription}}
+    <div class="description">{{'portfolio.projects.scope.scope' | translate}} : {{project.cadre | translate}} <br/><br/>
+      {{project.smallDescription | translate}}
     </div>
   </div>
 </div>

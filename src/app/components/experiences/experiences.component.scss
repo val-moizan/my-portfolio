@@ -1,16 +1,16 @@
 .experienceBoxList{
     margin: 100px 0;
-    max-width: 1600px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
     .experienceBox{
-  
         display: inline-block;
-        
+        margin-bottom: 40px;
         @media (min-width: 668px) {
             padding-inline: 50px;
-            width: 500px;
+            width: 30%;
         }   
 
 
