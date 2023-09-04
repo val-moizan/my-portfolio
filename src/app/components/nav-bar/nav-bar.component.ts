@@ -126,7 +126,6 @@ export class NavBarComponent {
   @HostListener('window:click', ['$event.target'])
   onClick(target: HTMLElement) {
     const dropdown:HTMLElement = document.getElementsByClassName("navBar")[0] as HTMLElement
-    console.log(dropdown.contains(target))
     if(!dropdown.contains(target)){ //Click hors du dropdown
       if(this.expanded){
         this.expandClickNavBar()
