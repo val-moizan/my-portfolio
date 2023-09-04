@@ -4,7 +4,8 @@
   height:100%;
   width:100%;
   overflow: auto;
-  background-color: var(--color-banner-background);
+  background: rgb(2,0,36);
+  background: linear-gradient(0deg, rgb(186, 213, 255) 0%, rgb(81, 146, 250) 100%);
   display: flex;
   justify-content: center;
   align-items: center;
