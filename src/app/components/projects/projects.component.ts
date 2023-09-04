@@ -156,7 +156,7 @@ export class ProjectsComponent {
       date: "2023",
       people: "1",
       role: "portfolio.projects.role.developer",
-      color: "#2CD4AF",
+      color: "#3446eb",
       technologies: [
         {
           name:"Angular",
@@ -194,7 +194,7 @@ export class ProjectsComponent {
       date: "2021-2022",
       people: "1",
       role: "portfolio.projects.role.developer",
-      color: "#77c159",
+      color: "#dea2fc",
       technologies: [
         {
           name:"Android",

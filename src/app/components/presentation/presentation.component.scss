@@ -1,6 +1,4 @@
 .presentation {
-  margin-left: 10%;
-  margin-right: 10%;
   border: 1px solid rgba(255, 255, 255, .2);
   border-radius: 8px;
   -webkit-box-shadow: 1px 0 34px 0 rgba(0, 0, 0, .37);
@@ -10,8 +8,9 @@
   background-color: white;
   position: relative;
   z-index: 10;
-  margin: 65px 10%;
+  margin: 65px 0px;
   align-items: center;
+  width: 70%;
 }
 
 .presentation .imgPres{
@@ -42,6 +41,7 @@
 @media (max-width: 668px) {
   .presentation{
     display: inline-block;
+    margin: 65px 10% 30px 10% ;
   }
   .presentation .textPres{
     padding-right: 4%;
@@ -56,5 +56,42 @@
   }
   .presentation p {
     font-size: 15px;
+  }
+}
+
+.globalPres{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 668px) {
+    flex-direction: column;
+  }
+  .resumeDL{
+    transition: 300ms ease all;
+    border-radius: 8px;
+    padding:3px;
+    cursor: pointer;
+    width: 100px;
+    height: 100%;
+    @media (min-width: 668px) {
+      margin-left: 50px;
+    }
+    @media (max-width: 668px) {
+      margin-bottom: 40px;
+    }
+
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+      width: 50px;
+      margin-bottom: 10px;
+    }
+  }
+  .resumeDL:hover{
+    -webkit-box-shadow: 1px 0 5px 0 rgba(0, 0, 0, .37);
+    -moz-box-shadow: 1px 0 5px 0 rgba(0, 0, 0, .37);
+    box-shadow: 1px 0 5px 0 rgba(0, 0, 0, .37);
   }
 }
