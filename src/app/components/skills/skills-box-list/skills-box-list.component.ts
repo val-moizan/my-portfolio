@@ -8,7 +8,10 @@ export class SkillsBoxListComponent {
   skillBoxes: SkillBoxObject[]= [
     {
       title: "portfolio.skills.boxTitles.database", boxLogo: "assets/logos/database.png", skills: [
-        {name : "MySql", logo: "assets/logos/mysql.png"},{name : "PhpMyAdmin", logo: "assets/logos/phpmyadmin.png"}
+        {name : "MySql", logo: "assets/logos/mysql.png"},
+        {name : "PhpMyAdmin", logo: "assets/logos/phpmyadmin.png"},
+        {name : "Postgresql", logo: "assets/logos/postgresql.png"},
+        {name : "Sequelize", logo: "assets/logos/sequelize.png"},
       ]
     },
     {
@@ -30,14 +33,23 @@ export class SkillsBoxListComponent {
         {name : "JetBrains", logo: "assets/logos/jetbrain.png"},
         {name : "Eclipse", logo: "assets/logos/eclipse.png"},
         {name : "VSCode", logo: "assets/logos/vscode.png"},
-        {name : "GitLab", logo: "assets/logos/gitlab.png"}
+        {name : "GitLab", logo: "assets/logos/gitlab.png"},
+        {name : "GitHub", logo: "assets/logos/github.png"},
+        {name : "Unity", logo: "assets/logos/unity.png"}
       ]
     },
     {
       title: "portfolio.skills.boxTitles.webDev", boxLogo: "assets/logos/web.png", skills: [
-        {name : "HTML", logo: "assets/logos/html.png"},{name : "CSS", logo: "assets/logos/css.png"},{name : "Angular", logo: "assets/logos/angular.png"},
-        {name : "Spring Boot", logo: "assets/logos/spring.png"},{name : "JavaScript", logo: "assets/logos/js.png"},{name : "PHP", logo: "assets/logos/php.png"},
-        {name : "React", logo: "assets/logos/react.png"},{name : "Symfony", logo: "assets/logos/symfony.jpg"}
+        {name : "HTML", logo: "assets/logos/html.png"},
+        {name : "CSS", logo: "assets/logos/css.png"},
+        {name : "Angular", logo: "assets/logos/angular.png"},
+        {name : "Spring Boot", logo: "assets/logos/spring.png"},
+        {name : "JavaScript", logo: "assets/logos/js.png"},
+        {name : "PHP", logo: "assets/logos/php.png"},
+        {name : "React", logo: "assets/logos/react.png"},
+        {name : "Symfony", logo: "assets/logos/symfony.png"},
+        {name : "NodeJS", logo: "assets/logos/nodejs.png"},
+        {name : "ExpressJS", logo: "assets/logos/expressjs.png"},
       ]
     },
     {
