@@ -1,5 +1,5 @@
 .skillBox {
-  width: 300px;
+  width: 330px;
   height:350px;
   vertical-align: bottom;
   display: inline-block;
@@ -11,6 +11,7 @@
   margin-inline: 15px;
   margin-bottom: 30px;
   @media (max-width:500px) {
+    width: 300px;
     margin-inline: 0;
   }
 }

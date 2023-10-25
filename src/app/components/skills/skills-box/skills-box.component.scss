@@ -8,13 +8,28 @@
   padding-right: 5px;
   margin-bottom: 10px;
   text-align: center;
+  .img{
+    max-height: 50px;
+    @media (max-width:500px) {
+      max-height: 40px;
+    }
+  }
+
+  .skillTitle{
+    font-size: 17px;
+    @media (max-width:500px) {
+      font-size: 14px;
+    }
+  }
 }
 .skillIcon {
   background-repeat: no-repeat;
 }
 img {
   max-height: 50px;
+
 }
+
 .title {
   display: inline-block;
   vertical-align: top;
