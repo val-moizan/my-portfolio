@@ -35,7 +35,8 @@ export class SkillsBoxListComponent {
         {name : "VSCode", logo: "assets/logos/vscode.png"},
         {name : "GitLab", logo: "assets/logos/gitlab.png"},
         {name : "GitHub", logo: "assets/logos/github.png"},
-        {name : "Unity", logo: "assets/logos/unity.png"}
+        {name : "Unity", logo: "assets/logos/unity.png"},
+        {name : "Docker", logo: "assets/logos/docker.png"}
       ]
     },
     {
