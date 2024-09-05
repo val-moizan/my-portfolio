@@ -12,6 +12,7 @@ export class SkillsBoxListComponent {
         {name : "PhpMyAdmin", logo: "assets/logos/phpmyadmin.png"},
         {name : "Postgresql", logo: "assets/logos/postgresql.png"},
         {name : "Sequelize", logo: "assets/logos/sequelize.png"},
+        {name : "MongoDB", logo: "assets/logos/mongodb.png"},
       ]
     },
     {
