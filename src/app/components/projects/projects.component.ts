@@ -215,7 +215,7 @@ export class ProjectsComponent {
       description: `portfolio.projects.descriptions.tda`,
       date: "2024",
       people: "4-5",
-      role: "portfolio.projects.role.leadDeveloper",
+      role: "portfolio.projects.role.developer",
       color: "#12ABDB",
       technologies: [
         {
