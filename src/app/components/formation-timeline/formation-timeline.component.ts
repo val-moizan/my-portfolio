@@ -9,6 +9,11 @@ export class FormationTimelineComponent {
 
   public formationList: FormationObject[] = [
     {
+      date: "2024",
+      title: "portfolio.formation.capgemini",
+      backgroundImgPath: "assets/formation/capgemini.png"
+    },
+    {
       date: "2022-2023",
       title: "portfolio.formation.sopraApprenticeship",
       backgroundImgPath: "assets/formation/sopra.png"

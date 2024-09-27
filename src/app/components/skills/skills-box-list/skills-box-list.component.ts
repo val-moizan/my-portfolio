@@ -13,6 +13,7 @@ export class SkillsBoxListComponent {
         {name : "Postgresql", logo: "assets/logos/postgresql.png"},
         {name : "Sequelize", logo: "assets/logos/sequelize.png"},
         {name : "MongoDB", logo: "assets/logos/mongodb.png"},
+        {name : "GraphQL", logo: "assets/logos/graphql.png"},
       ]
     },
     {

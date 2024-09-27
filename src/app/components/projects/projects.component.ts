@@ -205,6 +205,44 @@ export class ProjectsComponent {
           logo:"assets/logos/java.png",
         }
       ]
+    },
+    {
+      name: "TDA",
+      cadre: "portfolio.projects.scope.professional", 
+      backgroundImgPath: "assets/projet/tda.png", 
+      backgroundBoxImgPath: "assets/projet/tda.png", 
+      smallDescription: "portfolio.projects.smallDescriptions.tda", 
+      description: `portfolio.projects.descriptions.tda`,
+      date: "2024",
+      people: "4-5",
+      role: "portfolio.projects.role.developer",
+      color: "#12ABDB",
+      technologies: [
+        {
+          name:"ReactJS",
+          logo:"assets/logos/react.png",
+        },
+        {
+          name:"ExpressJS",
+          logo:"assets/logos/expressjs.png",
+        },
+        {
+          name:"GraphQL",
+          logo:"assets/logos/graphql.png",
+        },
+        {
+          name:"PostgreSQL",
+          logo:"assets/logos/postgresql.png",
+        },
+        {
+          name:"Sequelize",
+          logo:"assets/logos/sequelize.png",
+        },
+        {
+          name:"Python",
+          logo:"assets/logos/python.png",
+        }
+      ]
     }
   ]
   ngOnInit(){
